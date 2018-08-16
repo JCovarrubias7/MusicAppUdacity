@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MusicAppUdacity</string>
+    
+    <!--Activity Main Strings-->
+    <string name="image_description">Photo by James Owen on Unsplash</string>
+    <string name="category_albums">Albums</string>
+    <string name="category_songs">Songs</string>
+
+</resources>
