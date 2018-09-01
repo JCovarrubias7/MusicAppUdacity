@@ -16,8 +16,8 @@ public class MainActivity extends AppCompatActivity {
         // Set the content of the activity to use the activity_main.xml layout file
         setContentView(R.layout.activity_main);
 
-        // Find the View that shows the numbers category
-        TextView albums = (TextView) findViewById(R.id.albums_textview);
+        // Find the View that shows the albums category
+        TextView albums = (TextView) findViewById(R.id.albums_text_view);
 
         // Set a click listener on that View
         albums.setOnClickListener(new View.OnClickListener() {
@@ -29,8 +29,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // Find the View that shows the family category
-        TextView songs = (TextView) findViewById(R.id.songs_textview);
+        // Find the View that shows the songs category
+        TextView songs = (TextView) findViewById(R.id.songs_text_view);
 
         // Set a click listener on that View
         songs.setOnClickListener(new View.OnClickListener() {
