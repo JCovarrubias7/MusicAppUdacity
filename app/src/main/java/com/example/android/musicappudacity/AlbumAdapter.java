@@ -10,8 +10,8 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class MusicAdapter extends ArrayAdapter<CompositionClass> {
-    public MusicAdapter(Activity context, ArrayList<CompositionClass> albums) {
+public class AlbumAdapter extends ArrayAdapter<CompositionClass> {
+    public AlbumAdapter(Activity context, ArrayList<CompositionClass> albums) {
         // Here, we initialize the ArrayAdapter's internal storage for the context and the list.
         // the second argument is used when the ArrayAdapter is populating a single TextView.
         // Because this is a custom adapter for two TextViews and an ImageView, the adapter is not

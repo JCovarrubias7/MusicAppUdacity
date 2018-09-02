@@ -32,7 +32,7 @@ public class AlbumsActivity extends AppCompatActivity {
         music.add(new CompositionClass("Joan Sebastian", "Mas Alla Del Sol", "35:28", 12, "Eso Y Mas", "2:39"));
 
 
-        MusicAdapter adapter = new MusicAdapter(this, music);
+        AlbumAdapter adapter = new AlbumAdapter(this, music);
 
         ListView listView = (ListView) findViewById(R.id.list);
 
