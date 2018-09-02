@@ -48,7 +48,7 @@ public class CompositionClass {
     }
 
     // Get  Album Length
-    public String getmAlbumLength() {
+    public String getAlbumLength() {
         return mAlbumLength;
     }
 
