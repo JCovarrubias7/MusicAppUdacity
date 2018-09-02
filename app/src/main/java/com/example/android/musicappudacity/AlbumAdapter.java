@@ -33,10 +33,10 @@ public class AlbumAdapter extends ArrayAdapter<CompositionClass> {
         CompositionClass currentAlbum = getItem(position);
 
         // Find the TextView in the list_item.xml layout with the ID version_number
-        TextView songTextView = (TextView) listItemView.findViewById(R.id.artist_text_view);
+        TextView artistTextView = (TextView) listItemView.findViewById(R.id.artist_text_view);
         // Get the version number from the current AndroidFlavor object and
         // set this text on the number TextView
-        songTextView.setText(currentAlbum.getArtist());
+        artistTextView.setText(currentAlbum.getArtist());
 
         // Find the TextView in the list_item.xml layout with the ID version_name
         TextView albumTextView = (TextView) listItemView.findViewById(R.id.album_text_view);
@@ -51,10 +51,10 @@ public class AlbumAdapter extends ArrayAdapter<CompositionClass> {
         albumTracksTextView.setText(String.valueOf(currentAlbum.getTotalTracks()));
 
         // Find the TextView in the list_item.xml layout with the ID version_number
-        TextView songLengthTextView = (TextView) listItemView.findViewById(R.id.album_total_length_text_view);
+        TextView albumLengthTextView = (TextView) listItemView.findViewById(R.id.album_total_length_text_view);
         // Get the version number from the current AndroidFlavor object and
         // set this text on the number TextView
-        songLengthTextView.setText(currentAlbum.getmAlbumLength());
+        albumLengthTextView.setText(currentAlbum.getmAlbumLength());
 
         // Return the whole list item layout (containing 2 TextViews and an ImageView)
         // so that it can be shown in the ListView
