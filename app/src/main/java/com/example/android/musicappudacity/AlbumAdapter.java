@@ -29,31 +29,27 @@ public class AlbumAdapter extends ArrayAdapter<CompositionClass> {
                     R.layout.adapter_view_albums_layout, parent, false);
         }
 
-        // Get the {@link AndroidFlavor} object located at this position in the list
+        // Get the {@link Music} object located at this position in the list
         CompositionClass currentAlbum = getItem(position);
 
-        // Find the TextView in the list_item.xml layout with the ID version_number
+        // Find the TextView in the adapter_view_albums_layout via ID
         TextView artistTextView = (TextView) listItemView.findViewById(R.id.artist_text_view);
-        // Get the version number from the current AndroidFlavor object and
-        // set this text on the number TextView
+        // Set this text on the artist TextView
         artistTextView.setText(currentAlbum.getArtist());
 
-        // Find the TextView in the list_item.xml layout with the ID version_name
+        // Find the TextView in the adapter_view_albums_layout via ID
         TextView albumTextView = (TextView) listItemView.findViewById(R.id.album_text_view);
-        // Get the version name from the current AndroidFlavor object and
-        // set this text on the name TextView
+        // Set this text on the album TextView
         albumTextView.setText(currentAlbum.getAlbum());
 
-        // Find the TextView in the list_item.xml layout with the ID version_name
+        // Find the TextView in the adapter_view_albums_layout via ID
         TextView albumTracksTextView = (TextView) listItemView.findViewById(R.id.total_tracks_text_view);
-        // Get the version name from the current AndroidFlavor object and
-        // set this text on the name TextView
+        // Set this text on the albumTracks TextView
         albumTracksTextView.setText(String.valueOf(currentAlbum.getTotalTracks()));
 
-        // Find the TextView in the list_item.xml layout with the ID version_number
+        // Find the TextView in the adapter_view_albums_layout via ID
         TextView albumLengthTextView = (TextView) listItemView.findViewById(R.id.album_total_length_text_view);
-        // Get the version number from the current AndroidFlavor object and
-        // set this text on the number TextView
+        // Set this text on the albumLength TextView
         albumLengthTextView.setText(currentAlbum.getAlbumLength());
 
         // Return the whole list item layout (containing 2 TextViews and an ImageView)

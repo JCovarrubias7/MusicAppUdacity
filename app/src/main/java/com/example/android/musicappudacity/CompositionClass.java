@@ -21,7 +21,7 @@ public class CompositionClass {
     // Song title
     private String mAlbumSong;
 
-    // Song length in minutes and seconds
+    // Song length in minutes:seconds
     private String mSongLength;
 
     /** Constructor, used to create the object with the required inputs the caller has to pass in */
