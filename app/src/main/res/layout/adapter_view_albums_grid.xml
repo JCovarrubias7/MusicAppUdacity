@@ -4,11 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="16dp"
     android:padding="8dp"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/background_with_shadow">
 
     <ImageView
         android:id="@+id/album_image_view"
+        android:scaleType="centerCrop"
         android:layout_width="175dp"
         android:layout_height="135dp"
         />
