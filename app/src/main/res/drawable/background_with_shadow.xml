@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- This code was copied from this link -
+ https://stackoverflow.com/questions/13005714/how-to-show-shadow-around-the-linearlayout-in-android
+ from the second post on that link
+ from user Muthee - https://stackoverflow.com/users/1748851/muthee
+ -->
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
     <item >
         <shape
