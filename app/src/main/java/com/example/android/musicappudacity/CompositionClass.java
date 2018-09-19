@@ -24,15 +24,18 @@ public class CompositionClass {
     // Song length in minutes:seconds
     private String mSongLength;
 
+    private int mImageResourceId;
+
     /** Constructor, used to create the object with the required inputs the caller has to pass in */
 
-    public CompositionClass(String artist, String album, String albumlength, int tracks, String song, String length) {
+    public CompositionClass(String artist, String album, String albumLength, int tracks, String song, String length, int imageResourceId) {
         mArtistName = artist;
         mArtistAlbum = album;
-        mAlbumLength = albumlength;
+        mAlbumLength = albumLength;
         mAlbumTotalTracks = tracks;
         mAlbumSong = song;
         mSongLength = length;
+        mImageResourceId = imageResourceId;
     }
 
     /** Set methods to get information from this class */
@@ -65,6 +68,11 @@ public class CompositionClass {
     // Get Song
     public String getSongLength() {
         return mSongLength;
+    }
+
+    //Get Image
+    public int getImageResourceId() {
+        return mImageResourceId;
     }
 
 }
