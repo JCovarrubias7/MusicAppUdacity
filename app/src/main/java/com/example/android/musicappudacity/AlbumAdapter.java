@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -26,31 +27,36 @@ public class AlbumAdapter extends ArrayAdapter<CompositionClass> {
         View listItemView = convertView;
         if(listItemView == null) {
             listItemView = LayoutInflater.from(getContext()).inflate(
-                    R.layout.adapter_view_albums_layout, parent, false);
+                    R.layout.adapter_view_albums_grid, parent, false);
         }
 
         // Get the {@link Music} object located at this position in the list
         CompositionClass currentAlbum = getItem(position);
 
-        // Find the TextView in the adapter_view_albums_layout via ID
-        TextView artistTextView = (TextView) listItemView.findViewById(R.id.artist_text_view);
+        // Find the TextView in the adapter_view_albums_grid via ID
+        TextView artistTextView = (TextView) listItemView.findViewById(R.id.artist_grid_text_view);
         // Set this text on the artist TextView
         artistTextView.setText(currentAlbum.getArtist());
 
-        // Find the TextView in the adapter_view_albums_layout via ID
-        TextView albumTextView = (TextView) listItemView.findViewById(R.id.album_text_view);
+        // Find the TextView in the adapter_view_albums_grid via ID
+        TextView albumTextView = (TextView) listItemView.findViewById(R.id.album_grid_text_view);
         // Set this text on the album TextView
         albumTextView.setText(currentAlbum.getAlbum());
 
-        // Find the TextView in the adapter_view_albums_layout via ID
-        TextView albumTracksTextView = (TextView) listItemView.findViewById(R.id.total_tracks_text_view);
-        // Set this text on the albumTracks TextView
-        albumTracksTextView.setText(String.valueOf(currentAlbum.getTotalTracks()));
-
-        // Find the TextView in the adapter_view_albums_layout via ID
-        TextView albumLengthTextView = (TextView) listItemView.findViewById(R.id.album_total_length_text_view);
-        // Set this text on the albumLength TextView
-        albumLengthTextView.setText(currentAlbum.getAlbumLength());
+        // Find the ImageView in the adapter_view_albums_grid via ID
+        ImageView iconView = (ImageView) listItemView.findViewById(R.id.album_image_view);
+        // Set the image on the album imageView
+        iconView.setImageResource(currentAlbum.getImageResourceId());
+//
+//        // Find the TextView in the adapter_view_albums_layout via ID
+//        TextView albumTracksTextView = (TextView) listItemView.findViewById(R.id.total_tracks_text_view);
+//        // Set this text on the albumTracks TextView
+//        albumTracksTextView.setText(String.valueOf(currentAlbum.getTotalTracks()));
+//
+//        // Find the TextView in the adapter_view_albums_layout via ID
+//        TextView albumLengthTextView = (TextView) listItemView.findViewById(R.id.album_total_length_text_view);
+//        // Set this text on the albumLength TextView
+//        albumLengthTextView.setText(currentAlbum.getAlbumLength());
 
         // Return the whole list item layout (containing 2 TextViews and an ImageView)
         // so that it can be shown in the ListView
