@@ -1,20 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="16dp"
-    android:padding="8dp"
+    android:background="@drawable/background_with_shadow"
     android:orientation="vertical"
-    android:background="@drawable/background_with_shadow">
+    android:padding="8dp">
 
     <ImageView
         android:id="@+id/album_image_view"
-        android:scaleType="centerCrop"
         android:layout_width="175dp"
         android:layout_height="135dp"
-        />
+        android:scaleType="centerCrop" />
 
     <LinearLayout
         android:layout_width="175dp"
@@ -23,20 +21,22 @@
 
         <TextView
             android:id="@+id/album_grid_text_view"
-            tools:text="ALBUM NAME"
-            android:textStyle="bold"
-            android:paddingLeft="4dp"
             android:layout_width="match_parent"
-            android:layout_height="20dp" />
+            android:layout_height="20dp"
+            android:gravity="bottom"
+            android:paddingLeft="4dp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            tools:text="ALBUM NAME" />
 
         <TextView
             android:id="@+id/artist_grid_text_view"
-            tools:text="ARTIST NAME"
-            android:textStyle="italic"
-            android:paddingLeft="4dp"
             android:layout_width="match_parent"
-            android:layout_height="20dp" />
-
+            android:layout_height="20dp"
+            android:gravity="top"
+            android:paddingLeft="4dp"
+            android:textStyle="italic"
+            tools:text="ARTIST NAME" />
 
     </LinearLayout>
 
