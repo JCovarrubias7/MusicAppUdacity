@@ -44,9 +44,7 @@ public class SongsActivity extends AppCompatActivity {
                 nowPlayingIntent.putExtra("artist", artistName);
                 nowPlayingIntent.putExtra("album", albumImage);
                 startActivity(nowPlayingIntent);
-
             }
         });
-
     }
 }
