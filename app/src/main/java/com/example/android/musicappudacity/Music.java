@@ -54,6 +54,4 @@ public class Music extends ArrayList {
 
         return music;
     }
-
-
 }
