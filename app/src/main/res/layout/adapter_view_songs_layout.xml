@@ -10,9 +10,10 @@
         android:layout_width="275dp"
         android:layout_height="44dp"
         android:layout_alignParentTop="true"
-        android:textSize="16sp"
         android:gravity="bottom"
-        android:padding="8dp"
+        android:paddingLeft="8dp"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
         android:textStyle="bold"
         tools:text="Song" />
 
@@ -22,7 +23,7 @@
         android:layout_height="44dp"
         android:layout_alignParentBottom="true"
         android:gravity="top"
-        android:padding="8dp"
+        android:paddingLeft="8dp"
         android:textStyle="italic"
         tools:text="Artist" />
 
@@ -39,9 +40,9 @@
             android:id="@+id/length_of_song_text_view"
             android:layout_width="match_parent"
             android:layout_height="88dp"
-            android:paddingLeft="16dp"
             android:layout_alignParentRight="true"
             android:gravity="center_vertical"
+            android:paddingLeft="16dp"
             tools:text="#:##" />
 
         <ImageView
@@ -50,8 +51,8 @@
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
             android:layout_marginRight="16dp"
-            android:src="@drawable/ic_play_arrow_24dp" />
-
+            android:src="@drawable/baseline_play_circle_outline_black_24" />
 
     </RelativeLayout>
+
 </RelativeLayout>
