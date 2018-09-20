@@ -47,16 +47,6 @@ public class AlbumAdapter extends ArrayAdapter<CompositionClass> {
         ImageView iconView = (ImageView) listItemView.findViewById(R.id.album_image_view);
         // Set the image on the album imageView
         iconView.setImageResource(currentAlbum.getImageResourceId());
-//
-//        // Find the TextView in the adapter_view_albums_layout via ID
-//        TextView albumTracksTextView = (TextView) listItemView.findViewById(R.id.total_tracks_text_view);
-//        // Set this text on the albumTracks TextView
-//        albumTracksTextView.setText(String.valueOf(currentAlbum.getTotalTracks()));
-//
-//        // Find the TextView in the adapter_view_albums_layout via ID
-//        TextView albumLengthTextView = (TextView) listItemView.findViewById(R.id.album_total_length_text_view);
-//        // Set this text on the albumLength TextView
-//        albumLengthTextView.setText(currentAlbum.getAlbumLength());
 
         // Return the whole list item layout (containing 2 TextViews and an ImageView)
         // so that it can be shown in the ListView
