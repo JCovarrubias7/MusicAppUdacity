@@ -41,7 +41,6 @@
 
     <!-- Now Playing Layout -->
     <dimen name="now_playing_text_view_height">22dp</dimen>
-    <dimen name="now_playing_text_view_margin">8dp</dimen>
     <!-- Child Linear Layout -->
     <dimen name="now_playing_layout_height">66dp</dimen>
 
