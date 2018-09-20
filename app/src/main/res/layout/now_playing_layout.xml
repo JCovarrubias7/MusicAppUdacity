@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/category_songs"
     android:orientation="vertical">
 
     <ImageView
@@ -17,9 +18,8 @@
         android:id="@+id/now_playing_song_view"
         android:layout_width="match_parent"
         android:layout_height="@dimen/now_playing_text_view_height"
-        android:layout_marginLeft="@dimen/now_playing_text_view_margin"
-        android:layout_marginStart="@dimen/now_playing_text_view_margin"
-        android:gravity="bottom"
+        android:textColor="@android:color/white"
+        android:gravity="center_horizontal"
         android:textSize="@dimen/songs_text_view_text_size"
         android:textStyle="bold"
         tools:text="Song Title" />
@@ -28,8 +28,8 @@
         android:id="@+id/now_playing_artist_view"
         android:layout_width="match_parent"
         android:layout_height="@dimen/now_playing_text_view_height"
-        android:layout_marginLeft="@dimen/now_playing_text_view_margin"
-        android:layout_marginStart="@dimen/now_playing_text_view_margin"
+        android:textColor="@android:color/white"
+        android:gravity="center_horizontal"
         android:textStyle="italic"
         tools:text="Artist Name" />
 
