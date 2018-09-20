@@ -9,38 +9,33 @@
         android:id="@+id/now_playing_image_view"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="2"
+        android:layout_weight="1"
+        android:contentDescription="@string/album_image_view_descriptions"
         android:scaleType="centerCrop" />
-
-    <!--<TextView-->
-    <!--android:layout_width="match_parent"-->
-    <!--android:layout_height="22dp"-->
-    <!--android:text="NOW PLAYING"-->
-    <!--android:textAlignment="center" />-->
 
     <TextView
         android:id="@+id/now_playing_song_view"
         android:layout_width="match_parent"
-        android:layout_height="22dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginStart="8dp"
+        android:layout_height="@dimen/now_playing_text_view_height"
+        android:layout_marginLeft="@dimen/now_playing_text_view_margin"
+        android:layout_marginStart="@dimen/now_playing_text_view_margin"
         android:gravity="bottom"
-        android:textSize="16sp"
+        android:textSize="@dimen/songs_text_view_text_size"
         android:textStyle="bold"
         tools:text="Song Title" />
 
     <TextView
         android:id="@+id/now_playing_artist_view"
         android:layout_width="match_parent"
-        android:layout_height="22dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginStart="8dp"
+        android:layout_height="@dimen/now_playing_text_view_height"
+        android:layout_marginLeft="@dimen/now_playing_text_view_margin"
+        android:layout_marginStart="@dimen/now_playing_text_view_margin"
         android:textStyle="italic"
         tools:text="Artist Name" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="66dp"
+        android:layout_height="@dimen/now_playing_layout_height"
         android:gravity="center"
         android:orientation="horizontal">
 
@@ -48,18 +43,21 @@
             android:id="@+id/previous_track_image_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:contentDescription="@string/previous_track_button"
             android:src="@drawable/baseline_skip_previous_black_36" />
 
         <ImageView
             android:id="@+id/pause_image_view"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
+            android:contentDescription="@string/pause_track_button"
             android:src="@drawable/baseline_pause_circle_outline_black_48" />
 
         <ImageView
             android:id="@+id/next_track_image_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:contentDescription="@string/next_track_button"
             android:src="@drawable/baseline_skip_next_black_36" />
 
     </LinearLayout>

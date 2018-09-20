@@ -3,40 +3,47 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="16dp"
+    android:layout_margin="@dimen/layout_margin"
     android:background="@drawable/background_with_shadow"
     android:orientation="vertical"
-    android:padding="8dp">
+    android:padding="@dimen/layout_padding_8">
 
     <ImageView
         android:id="@+id/album_image_view"
-        android:layout_width="175dp"
-        android:layout_height="135dp"
+        android:layout_width="@dimen/grid_album_image_width"
+        android:layout_height="@dimen/grid_album_image_height"
+        android:contentDescription="@string/album_image_view_descriptions"
         android:scaleType="centerCrop" />
 
     <LinearLayout
-        android:layout_width="175dp"
+        android:layout_width="@dimen/grid_album_image_width"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <TextView
             android:id="@+id/album_grid_text_view"
             android:layout_width="match_parent"
-            android:layout_height="20dp"
+            android:layout_height="@dimen/text_view_height"
             android:gravity="bottom"
-            android:paddingLeft="4dp"
+            android:paddingEnd="@dimen/text_view_padding_right_0"
+            android:paddingLeft="@dimen/text_view_padding_left_4"
+            android:paddingRight="@dimen/text_view_padding_right_0"
+            android:paddingStart="@dimen/text_view_padding_left_4"
             android:textColor="@android:color/black"
             android:textStyle="bold"
-            tools:text="ALBUM NAME" />
+            tools:text="@string/tools_album_text" />
 
         <TextView
             android:id="@+id/artist_grid_text_view"
             android:layout_width="match_parent"
-            android:layout_height="20dp"
+            android:layout_height="@dimen/text_view_height"
             android:gravity="top"
-            android:paddingLeft="4dp"
+            android:paddingEnd="@dimen/text_view_padding_right_0"
+            android:paddingLeft="@dimen/text_view_padding_left_4"
+            android:paddingRight="@dimen/text_view_padding_right_0"
+            android:paddingStart="@dimen/text_view_padding_left_4"
             android:textStyle="italic"
-            tools:text="ARTIST NAME" />
+            tools:text="@string/tools_artist_text" />
 
     </LinearLayout>
 

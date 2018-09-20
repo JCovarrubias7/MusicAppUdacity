@@ -4,16 +4,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background_color"
-    android:padding="16dp"
+    android:padding="@dimen/layout_padding_16"
     tools:context=".MainActivity">
 
     <ImageView
         android:id="@+id/music_app_logo"
         android:layout_width="match_parent"
-        android:layout_height="375dp"
-        android:layout_marginTop="16dp"
+        android:layout_height="@dimen/image_view_height"
+        android:layout_marginTop="@dimen/image_view_margin_top"
         android:contentDescription="@string/image_description"
-        android:padding="32dp"
+        android:padding="@dimen/image_view_padding"
         android:scaleType="centerCrop"
         android:src="@drawable/music_app_logo" />
 

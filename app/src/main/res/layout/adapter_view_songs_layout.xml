@@ -7,31 +7,38 @@
 
     <TextView
         android:id="@+id/song_text_view"
-        android:layout_width="275dp"
-        android:layout_height="44dp"
+        android:layout_width="@dimen/songs_text_view_width"
+        android:layout_height="@dimen/songs_text_view_height"
         android:layout_alignParentTop="true"
         android:gravity="bottom"
-        android:paddingLeft="8dp"
+        android:paddingEnd="@dimen/songs_text_view_padding_right_0"
+        android:paddingLeft="@dimen/songs_text_view_padding_left_8"
+        android:paddingRight="@dimen/songs_text_view_padding_right_0"
+        android:paddingStart="@dimen/songs_text_view_padding_left_8"
         android:textColor="@android:color/black"
-        android:textSize="16sp"
+        android:textSize="@dimen/songs_text_view_text_size"
         android:textStyle="bold"
-        tools:text="Song" />
+        tools:text="@string/tools_song_text" />
 
     <TextView
         android:id="@+id/artist_text_view"
-        android:layout_width="275dp"
-        android:layout_height="44dp"
+        android:layout_width="@dimen/songs_text_view_width"
+        android:layout_height="@dimen/songs_text_view_height"
         android:layout_alignParentBottom="true"
         android:gravity="top"
-        android:paddingLeft="8dp"
+        android:paddingEnd="@dimen/songs_text_view_padding_right_0"
+        android:paddingLeft="@dimen/songs_text_view_padding_left_8"
+        android:paddingRight="@dimen/songs_text_view_padding_right_0"
+        android:paddingStart="@dimen/songs_text_view_padding_left_8"
         android:textStyle="italic"
-        tools:text="Artist" />
+        tools:text="@string/tools_artist_text" />
 
     <RelativeLayout
         android:id="@+id/text_container"
-        android:layout_width="100dp"
+        android:layout_width="@dimen/songs_layout_width"
         android:layout_height="@dimen/list_item_height"
         android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
         android:orientation="vertical">
@@ -39,18 +46,27 @@
         <TextView
             android:id="@+id/length_of_song_text_view"
             android:layout_width="match_parent"
-            android:layout_height="88dp"
+            android:layout_height="@dimen/list_item_height"
+            android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:gravity="center_vertical"
-            android:paddingLeft="16dp"
-            tools:text="#:##" />
+            android:paddingEnd="@dimen/songs_padding_right_0"
+            android:paddingLeft="@dimen/songs_padding_left_16"
+            android:paddingRight="@dimen/songs_padding_right_0"
+            android:paddingStart="@dimen/songs_padding_left_16"
+            tools:text="@string/tools_length_text" />
 
         <ImageView
-            android:layout_width="24dp"
-            android:layout_height="24dp"
+            android:layout_width="@dimen/songs_image_view_width"
+            android:layout_height="@dimen/songs_image_view_height"
+            android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
-            android:layout_marginRight="16dp"
+            android:layout_marginEnd="@dimen/songs_margin_left"
+            android:layout_marginLeft="@dimen/songs_margin_left"
+            android:layout_marginRight="@dimen/songs_margin_right"
+            android:layout_marginStart="@dimen/songs_margin_right"
+            android:contentDescription="@string/play_button_description"
             android:src="@drawable/baseline_play_circle_outline_black_24" />
 
     </RelativeLayout>

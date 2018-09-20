@@ -6,4 +6,19 @@
     <string name="category_albums">Albums</string>
     <string name="category_songs">Songs</string>
 
+    <!-- Adapter View Albums Grid Strings -->
+    <string name="album_image_view_descriptions">Album</string>
+    <!-- Used in Adapter View Songs Layout -->
+    <string name="tools_album_text">ALBUM NAME</string>
+    <string name="tools_artist_text">ARTIST NAME</string>
+    <string name="tools_song_text">SONG NAME</string>
+    <string name="tools_length_text">#:##</string>
+    <string name="play_button_description">Play Button</string>
+
+    <!-- Now Playing Layout -->
+    <!-- Icon Descriptions -->
+    <string name="previous_track_button">Previous Track Button</string>
+    <string name="pause_track_button">Pause Button</string>
+    <string name="next_track_button">Next Track Button</string>
+
 </resources>

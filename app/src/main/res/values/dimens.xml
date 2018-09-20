@@ -1,8 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Activity Main Dimensions -->
+    <dimen name="layout_padding_16">16dp</dimen>
+    <dimen name="image_view_height">350dp</dimen>
+    <dimen name="image_view_margin_top">16dp</dimen>
+    <dimen name="image_view_padding">32dp</dimen>
+
+    <!-- Adapter View Albums Grid Dimensions -->
+    <dimen name="layout_margin">16dp</dimen>
+    <dimen name="layout_padding_8">8dp</dimen>
+    <dimen name="grid_album_image_width">175dp</dimen>
+    <dimen name="grid_album_image_height">135dp</dimen>
+    <dimen name="text_view_height">20dp</dimen>
+    <dimen name="text_view_padding_left_4">4dp</dimen>
+    <dimen name="text_view_padding_right_0">0dp</dimen>
+
+    <!-- Adapter View Songs Layout Dimensions-->
+    <dimen name="songs_text_view_width">275dp</dimen>
+    <dimen name="songs_text_view_height">44dp</dimen>
+    <dimen name="songs_text_view_padding_left_8">8dp</dimen>
+    <dimen name="songs_text_view_padding_right_0">0dp</dimen>
+    <dimen name="songs_text_view_text_size">16sp</dimen>
     <!-- Height of each list item -->
     <dimen name="list_item_height">88dp</dimen>
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+
+        <!-- Child Relative Layout Dimensions-->
+        <dimen name="songs_layout_width">100dp</dimen>
+        <dimen name="songs_padding_left_16">16dp</dimen>
+        <dimen name="songs_padding_right_0">0dp</dimen>
+        <dimen name="songs_image_view_width">24dp</dimen>
+        <dimen name="songs_image_view_height">24dp</dimen>
+        <dimen name="songs_margin_right">16dp</dimen>
+        <dimen name="songs_margin_left">0dp</dimen>
+
+    <!-- Grid View XML-->
+    <dimen name="grid_view_spacing">10dp</dimen>
+
+    <!-- Now Playing Layout -->
+    <dimen name="now_playing_text_view_height">22dp</dimen>
+    <dimen name="now_playing_text_view_margin">8dp</dimen>
+    <!-- Child Linear Layout -->
+    <dimen name="now_playing_layout_height">66dp</dimen>
+
 </resources>
